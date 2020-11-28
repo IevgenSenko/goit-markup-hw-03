@@ -35,7 +35,7 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 810px;
+  width: 1170px;
 }
 
 .hero {
@@ -107,12 +107,19 @@ body a {
 
   letter-spacing: 0.03em;
 }
+.specials h2 {
+  display: none;
+}
 .specials h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.specials {
+  padding-top: 94px;
 }
 .specials p {
   font-size: 14px;
@@ -121,19 +128,30 @@ body a {
 
   color: #757575;
 }
-.whatwedo > h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+.whatwedo {
   text-align: center;
-  letter-spacing: 0.03em;
+  padding-bottom: 94px;
 }
-.team > h2 {
+.whatwedo h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+.team h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  outline: 2px solid #2196f3;
 }
 .team h3 {
   font-weight: 500;
@@ -147,6 +165,9 @@ body a {
   line-height: 19px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.team img {
+  margin-bottom: 30px;
 }
 footer {
   height: 252px;
