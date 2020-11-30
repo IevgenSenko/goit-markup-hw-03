@@ -4,10 +4,15 @@ body {
   text-decoration: none;
   color: #212121;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 nav,
 section,
 div {
-  outline: 2px solid tomato;
+  /*  outline: 2px solid tomato;*/
 }
 h1,
 h2,
@@ -62,6 +67,11 @@ ul {
   color: #ffffff;
   background: #2196f3;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero button:hover,
+.hero button:focus {
+  background: #188ce8;
 }
 .hero > div {
   text-align: center;
@@ -156,25 +166,41 @@ body a {
 }
 .specials-list {
   display: flex;
+  margin-bottom: 94px;
 }
 .specials-list .item:not(:last-child) {
   margin-right: 30px;
 }
-.whatwedo {
-  text-align: center;
-  padding-bottom: 94px;
+.specials-list .item {
+  display: block;
+  width: 270px;
+  height: 101px;
 }
+
 .whatwedo h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  text-align: center;
+}
+.whatwedo-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.whatwedo-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.whatwedo-list .item {
+  display: block;
 }
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
+  background: #f5f4fa;
 }
 .team h2 {
   font-weight: 700;
@@ -183,13 +209,13 @@ body a {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  outline: 2px solid #2196f3;
 }
 .team h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .team p {
   font-weight: normal;
@@ -198,8 +224,21 @@ body a {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.team img {
-  margin-bottom: 30px;
+
+.team-list {
+  display: flex;
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list .item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.item-name {
+  padding: 30px 0px;
 }
 footer {
   height: 252px;
