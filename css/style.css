@@ -122,6 +122,8 @@ body a {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+}
+.main-nav .logo {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -237,32 +239,40 @@ body a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.item-name {
+.team-list .item-name {
   padding: 30px 0px;
 }
-footer {
+.footer {
   height: 252px;
   background: #2f303a;
+  padding-top: 60px;
+  display: block;
 }
+
 address p {
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71px;
   letter-spacing: 0.03em;
   font-style: normal;
-
   color: #ffffff;
+  margin-bottom: 8px;
 }
 address a {
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.71px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-footer .logo {
+.footer .logo {
   color: #ffffff;
+  margin-bottom: 20px;
+  display: block;
 }
+.adress-mail {
+  margin-bottom: 8px;
+  display: block;
+}
+
 .sort button {
   background: #f5f4fa;
   border-radius: 4px;
@@ -289,16 +299,6 @@ footer .logo {
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.cards div {
-  width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 696px;
-
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
 .cards-sort {
   font-weight: normal;
   font-size: 16px;
@@ -307,11 +307,50 @@ footer .logo {
 
   color: #757575;
 }
+.cards {
+  margin-bottom: 94px;
+}
 .cards-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-list .item {
+  width: calc((100% - 60px) / 3);
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.cards-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+.cards-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.cards-list .item-name {
+  padding: 20px 24px;
+}
+.cards-list img:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.sort-list {
+  display: flex;
+  margin-bottom: 34px;
+  margin-top: 94px;
+  justify-content: center;
+}
+.sort-list .item:not(:last-child) {
+  margin-right: 8px;
 }
 a {
   color: #212121;
