@@ -156,7 +156,7 @@ body a {
 }
 .specials {
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .specials p {
   font-size: 14px;
@@ -245,9 +245,9 @@ body a {
   display: block;
 }
 footer {
-  height: 252px;
   padding-top: 60px;
   background: #2f303a;
+  padding-bottom: 60px;
 }
 address p {
   font-weight: normal;
@@ -262,6 +262,7 @@ address a {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
 .footer .logo {
   color: #ffffff;
@@ -352,8 +353,8 @@ address a {
   margin-bottom: 34px;
 }
 .portfolio-main {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 a {
   color: #212121;
