@@ -41,8 +41,8 @@ ul {
 .hero {
   background-color: #2f303a;
   color: #ffffff;
-  height: 600px;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero > h1 {
   font-weight: 900;
